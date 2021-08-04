@@ -31,7 +31,9 @@ appForm.addEventListener('submit', (e) => {
 
 
 var [yyyy, mm, dd] = dateInput.split("-");
-
+if (mm/10<=1){
+  mm = mm/10*10;
+}
 var revdate = `${mm}/${dd}/${yyyy}`;
 
 console.log(revdate)
